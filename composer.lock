@@ -4,8 +4,70 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9eeb57a2884c293515c438460e84413f",
+    "content-hash": "0716a62abe537123e4e2277631c07f66",
     "packages": [
+        {
+            "name": "alkhachatryan/laravel-web-console",
+            "version": "3.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/alkhachatryan/laravel-web-console.git",
+                "reference": "838fb1a0d92e3ffd5a4671517cf687b308a9db43"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/alkhachatryan/laravel-web-console/zipball/838fb1a0d92e3ffd5a4671517cf687b308a9db43",
+                "reference": "838fb1a0d92e3ffd5a4671517cf687b308a9db43",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "~5.7.0|~5.8.0|^6.0|^7.0|^8.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.1",
+                "orchestra/testbench": "~3.0",
+                "phpunit/phpunit": "~7.0|~8.0|~9.0",
+                "sempro/phpunit-pretty-print": "^1.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Alkhachatryan\\LaravelWebConsole\\LaravelWebConsoleServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "helpers.php"
+                ],
+                "psr-4": {
+                    "Alkhachatryan\\LaravelWebConsole\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alexey Khachatryan",
+                    "email": "info@khachatryan.org",
+                    "homepage": "https://khachatryan.org"
+                }
+            ],
+            "description": "Web console for your Laravel application",
+            "homepage": "https://github.com/alkhachatryan/laravel-web-console",
+            "keywords": [
+                "LaravelWebConsole",
+                "laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/alkhachatryan/laravel-web-console/issues",
+                "source": "https://github.com/alkhachatryan/laravel-web-console/tree/3.3"
+            },
+            "time": "2020-10-23T23:53:06+00:00"
+        },
         {
             "name": "asm89/stack-cors",
             "version": "v2.0.3",
@@ -961,6 +1023,48 @@
                 }
             ],
             "time": "2021-10-06T17:43:30+00:00"
+        },
+        {
+            "name": "infureal/artisan-gui",
+            "version": "2.0.0@beta",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/inFureal/artisan-gui.git",
+                "reference": "7ec78e73b5a8371ba407da626c97cb55809540ac"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/inFureal/artisan-gui/zipball/7ec78e73b5a8371ba407da626c97cb55809540ac",
+                "reference": "7ec78e73b5a8371ba407da626c97cb55809540ac",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": "^8.0",
+                "php": "^7.3|^8.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Infureal\\Providers\\GuiServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Infureal\\": "./src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Beautiful package for [laravel:artisan] gui for cool kids.",
+            "support": {
+                "issues": "https://github.com/inFureal/artisan-gui/issues",
+                "source": "https://github.com/inFureal/artisan-gui/tree/2.0.0@beta"
+            },
+            "time": "2021-01-23T10:10:25+00:00"
         },
         {
             "name": "laravel/framework",
@@ -8073,7 +8177,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "infureal/artisan-gui": 10
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
